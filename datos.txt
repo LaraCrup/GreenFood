@@ -8,4 +8,4 @@ CUATRIMESTRE: 2do Cuatrimestre
 COMISIÓN: DWM2BV
 TURNO: Mañana
 FECHA DE ENTREGA: 16/05/2023
-URL DEL SITIO: www.greenfood.com
+URL DEL SITIO: https://laracrup.github.io/GreenFood/

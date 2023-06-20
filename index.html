@@ -1,33 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Crupnicoff Lara - DWM2BV - 2023</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="./Multimedia/Favicon1.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Quicksand:wght@400;600&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Quicksand&display=swap" rel="stylesheet">
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Quicksand&display=swap" rel="stylesheet" />
 </head>
 
-<body>
+<body class="body">
     <header>
-        <nav>
-            <div class="logo"></div>
-            <input type="checkbox" id="toggle-menu">
-            <label for="toggle-menu" class="hamburger">
-                <img src="Multimedia/hamburger.png" alt="Menú">
-            </label>
-            <ul class="menu">
-                <li><a href="#recetas">Recetas</a></li>
-                <li><a href="#receta-de-la-semana">Receta de la semana</a></li>
-                <li><a href="#superalimentos">Superalimentos</a></li>
-                <li><a href="#newsletter">Newsletter</a></li>
+        <!-- Nav bar Boostrap -->
+        <nav class="navbar navbar-expand-lg justify-content-between">
+            <div class="pt-5">
+                <a class="navbar-brand" href="#">
+                    <img src="./Multimedia/logoTP.png" alt="Logo" width="130" height="80" class="d-inline-block">
+                </a>
+            </div>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#recetas">Recetas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#receta-de-la-semana">Receta de la semana</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#superalimentos">Superalimentos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#newsletter">Newsletter</a>
+                </li>
             </ul>
+            <div class="dropdown">
+                <button class="btn btn-success btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Menu
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#recetas">Recetas</a></li>
+                    <li><a class="dropdown-item" href="#receta-de-la-semana">Receta de la semana</a></li>
+                    <li><a class="dropdown-item" href="#superalimentos">Superalimentos</a></li>
+                    <li><a class="dropdown-item" href="#newsletter">Newsletter</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
@@ -38,17 +62,55 @@
                 <p>Saludable</p>
                 <p>Vegetariana</p>
             </div>
-            <div class="home-imagen">
-                <img src="./Multimedia/healthy-food.png" alt="healthy-food">
-            </div>
         </section>
-        <section id="banner">
-            <div class="div-banner">
-                <picture>
-                    <source media="(min-width: 1025px)" srcset="Multimedia/banner-pc.jpg">
-                    <source media="(min-width: 541px)" srcset="Multimedia/banner-tablet.jpg">
-                    <img src="./Multimedia/banner-mobile.jpg" alt="banner-mobile">
-                </picture>
+        <!-- Caroussel Bootstrap -->
+        <section id="banner" class="d-flex justify-content-center">
+            <div id="carouselBanner" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <picture>
+                            <source media="(min-width: 1401px)" srcset="./Multimedia/banner1_xxl.png">
+                            <source media="(min-width: 1201px)" srcset="./Multimedia/banner1_xl.png">
+                            <source media="(min-width: 993px)" srcset="./Multimedia/banner1_lg.png">
+                            <source media="(min-width: 769px)" srcset="./Multimedia/banner1_md.png">
+                            <source media="(min-width: 577px)" srcset="./Multimedia/banner1_sm.png">
+                            <source media="(min-width: 421px)" srcset="./Multimedia/banner1_420.png">
+                            <img src="./Multimedia/banner1_320.png" alt="banner1-320">
+                        </picture>
+                    </div>
+                    <div class="carousel-item">
+                        <picture>
+                            <source media="(min-width: 1401px)" srcset="./Multimedia/banner2_xxl.jpg">
+                            <source media="(min-width: 1201px)" srcset="./Multimedia/banner2_xl.jpg">
+                            <source media="(min-width: 993px)" srcset="./Multimedia/banner2_lg.jpg">
+                            <source media="(min-width: 769px)" srcset="./Multimedia/banner2_md.jpg">
+                            <source media="(min-width: 577px)" srcset="./Multimedia/banner2_sm.jpg">
+                            <source media="(min-width: 421px)" srcset="./Multimedia/banner2_420.png">
+                            <img src="./Multimedia/banner2_320.png" alt="banner2-320">
+                        </picture>
+                    </div>
+                    <div class="carousel-item">
+                        <picture>
+                            <source media="(min-width: 1401px)" srcset="./Multimedia/banner3_xxl.jpg">
+                            <source media="(min-width: 1201px)" srcset="./Multimedia/banner3_xl.jpg">
+                            <source media="(min-width: 993px)" srcset="./Multimedia/banner3_lg.jpg">
+                            <source media="(min-width: 769px)" srcset="./Multimedia/banner3_md.jpg">
+                            <source media="(min-width: 577px)" srcset="./Multimedia/banner3_sm.jpg">
+                            <source media="(min-width: 421px)" srcset="./Multimedia/banner3_420.png">
+                            <img src="./Multimedia/banner3_320.png" alt="banner3-320">
+                        </picture>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselBanner"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselBanner"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </section>
         <section id="recetas">
@@ -59,31 +121,32 @@
                 <h3>Ensaladas</h3>
                 <div class="scroll-cards">
                     <div class="card">
-                        <img src="./Multimedia/quinoa-palta-ensalada-power.jpg" alt="palta-quinoa">
+                        <img src="./Multimedia/quinoa-palta-ensalada-power.jpg" alt="palta-quinoa" />
                         <div>
                             <p>Palta y Quinoa Ensalada POWER</p>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="./Multimedia/ensalada-tomate-pepino-palta.jpg" alt="ensalada-totamte-pepino-palta">
+                        <img src="./Multimedia/ensalada-tomate-pepino-palta.jpg" alt="ensalada-totamte-pepino-palta" />
                         <div>
                             <p>Ensalada de Tomate y Palta</p>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="./Multimedia/ensalada-mediterrenea.jpg" alt="ensalada-mediterranea">
+                        <img src="./Multimedia/ensalada-mediterrenea.jpg" alt="ensalada-mediterranea" />
                         <div>
                             <p>Ensalada Mediterranea</p>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="./Multimedia/ensalada-waldorf.jpg" alt="ensalada-waldorf">
+                        <img src="./Multimedia/ensalada-waldorf.jpg" alt="ensalada-waldorf" />
                         <div>
                             <p class="p-unico">Ensalada Waldorf</p>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="./Multimedia/ensalada-granada-calabaza-nuez.jpg" alt="ensalada-granada-calabaza-nuez">
+                        <img src="./Multimedia/ensalada-granada-calabaza-nuez.jpg"
+                            alt="ensalada-granada-calabaza-nuez" />
                         <div>
                             <p>Ensalada de Calabaza y Nuez</p>
                         </div>
@@ -94,31 +157,31 @@
                 <h3>Platos Principales</h3>
                 <div class="scroll-cards">
                     <div class="card">
-                        <img src="./Multimedia/tacos-garbanzos.jpg" alt="tacos-garbanzos">
+                        <img src="./Multimedia/tacos-garbanzos.jpg" alt="tacos-garbanzos" />
                         <div>
                             <p>Tacos de Garbanzos</p>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="./Multimedia/sopa-fideos-curry.jpg" alt="sopa-fideos-curry">
+                        <img src="./Multimedia/sopa-fideos-curry.jpg" alt="sopa-fideos-curry" />
                         <div>
                             <p>Sopa de fideos con Curry</p>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="./Multimedia/hamburguesa-porotos-negros.jpg" alt="hamburguesa-porotos-negros">
+                        <img src="./Multimedia/hamburguesa-porotos-negros.jpg" alt="hamburguesa-porotos-negros" />
                         <div>
                             <p>Hamburguesa de Porotos Negros</p>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="./Multimedia/pasta-casera.jpg" alt="pasta-casera">
+                        <img src="./Multimedia/pasta-casera.jpg" alt="pasta-casera" />
                         <div>
                             <p class="p-unico">Pasta Casera</p>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="./Multimedia/tortilla-de-papas.jpg" alt="tortilla-de-papas">
+                        <img src="./Multimedia/tortilla-de-papas.jpg" alt="tortilla-de-papas" />
                         <div>
                             <p class="p-unico">Tortilla de papas</p>
                         </div>
@@ -129,31 +192,31 @@
                 <h3>Entradas</h3>
                 <div class="scroll-cards">
                     <div class="card">
-                        <img src="./Multimedia/sopa-crema-espinaca.jpg" alt="sopa-crema-espinaca">
+                        <img src="./Multimedia/sopa-crema-espinaca.jpg" alt="sopa-crema-espinaca" />
                         <div>
                             <p>Sopa Crema de Espinaca</p>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="./Multimedia/brocoli-asado.jpg" alt="brocoli-asado">
+                        <img src="./Multimedia/brocoli-asado.jpg" alt="brocoli-asado" />
                         <div>
                             <p>Brocoli Asado con Ajo</p>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="./Multimedia/zanahoria-asadas-con-miel.jpg" alt="zanahoria-asadas-con-miel">
+                        <img src="./Multimedia/zanahoria-asadas-con-miel.jpg" alt="zanahoria-asadas-con-miel" />
                         <div>
                             <p>Zanahorias Asadas con Miel</p>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="./Multimedia/pan-de-ajo.jpg" alt="pan-de-ajo">
+                        <img src="./Multimedia/pan-de-ajo.jpg" alt="pan-de-ajo" />
                         <div>
                             <p>Pan de Ajo con Queso</p>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="./Multimedia/guacamole.jpg" alt="guacamole">
+                        <img src="./Multimedia/guacamole.jpg" alt="guacamole" />
                         <div>
                             <p>Guacamole</p>
                         </div>
@@ -164,31 +227,31 @@
                 <h3>En menos de 15 minutos</h3>
                 <div class="scroll-cards">
                     <div class="card">
-                        <img src="./Multimedia/hummus.jpg" alt="hummus">
+                        <img src="./Multimedia/hummus.jpg" alt="hummus" />
                         <div>
                             <p>Hummus</p>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="./Multimedia/avocado-toast.jpg" alt="avocado-toast">
+                        <img src="./Multimedia/avocado-toast.jpg" alt="avocado-toast" />
                         <div>
                             <p class="p-unico">Avocado Toast</p>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="./Multimedia/omelette-relleno.jpg" alt="omelette-relleno">
+                        <img src="./Multimedia/omelette-relleno.jpg" alt="omelette-relleno" />
                         <div>
                             <p class="p-unico">Omelette Relleno</p>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="./Multimedia/tacos-vegetarianos.jpg" alt="tacos-vegetarianos">
+                        <img src="./Multimedia/tacos-vegetarianos.jpg" alt="tacos-vegetarianos" />
                         <div>
                             <p>Tacos Vegetarianos</p>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="./Multimedia/tofu-revuelto.jpg" alt="tofu-revuelto">
+                        <img src="./Multimedia/tofu-revuelto.jpg" alt="tofu-revuelto" />
                         <div>
                             <p>Revuelto de Tofu</p>
                         </div>
@@ -216,76 +279,131 @@
                 <h3>¿Qué son?</h3>
             </div>
             <div class="div-p-que">
-                <p>Los superalimentos son alimentos que se consideran especialmente ricos en nutrientes y compuestos
-                    beneﬁciosos para la salud. Estos alimentos contienen una variedad de vitaminas, minerales y
-                    antioxidantes, así como otros nutrientes esenciales como proteínas, grasas saludables y ﬁbra.</p>
-                <p>Los superalimentos pueden ayudar a prevenir enfermedades crónicas como la diabetes, el cáncer y las
-                    enfermedades cardíacas, mejorar la función cognitiva y reducir la inﬂamación en el cuerpo.</p>
+                <p>
+                    Los superalimentos son alimentos que se consideran especialmente
+                    ricos en nutrientes y compuestos beneﬁciosos para la salud. Estos
+                    alimentos contienen una variedad de vitaminas, minerales y
+                    antioxidantes, así como otros nutrientes esenciales como proteínas,
+                    grasas saludables y ﬁbra.
+                </p>
+                <p>
+                    Los superalimentos pueden ayudar a prevenir enfermedades crónicas
+                    como la diabetes, el cáncer y las enfermedades cardíacas, mejorar la
+                    función cognitiva y reducir la inﬂamación en el cuerpo.
+                </p>
             </div>
             <div class="div-h3-cuales">
                 <h3>¿Cuáles son?</h3>
             </div>
             <div class="superalimentos-container">
                 <div class="superalimento-card">
-                    <p><span>ACAÍ:</span> El acai es una baya de color púrpura oscuro que crece en el Amazonas y se ha
-                        vuelto popular
-                        en todo el mundo debido a su alto contenido de antioxidantes. Es rico en ﬁbra, grasas saludables
-                        y vitaminas C y E, y ayuda a mejorar la salud cardiovascular, apoya la función cognitiva y
-                        reduce la inﬂamación en el cuerpo.</p>
-                    <div class="superalimento-card-img">
-                        <img src="./Multimedia/acai.jpg" alt="acai">
-                    </div>
+                    <p>
+                        <span>ACAÍ:</span> El acai es una baya de color púrpura oscuro que
+                        crece en el Amazonas y se ha vuelto popular en todo el mundo
+                        debido a su alto contenido de antioxidantes. Es rico en ﬁbra,
+                        grasas saludables y vitaminas C y E, y ayuda a mejorar la salud
+                        cardiovascular, apoya la función cognitiva y reduce la inﬂamación
+                        en el cuerpo.
+                    </p>
+                    <picture class="superalimento-card-img">
+                        <source media="(min-width: 1401px)" srcset="./Multimedia/acai_xxl.jpg">
+                        <source media="(min-width: 1201px)" srcset="./Multimedia/acai_xl.jpg">
+                        <source media="(min-width: 993px)" srcset="./Multimedia/acai_lg.jpg">
+                        <source media="(min-width: 769px)" srcset="./Multimedia/acai_md.jpg">
+                        <source media="(min-width: 577px)" srcset="./Multimedia/acai_sm.jpg">
+                        <img src="./Multimedia/acai_320.jpg" alt="acai-320">
+                    </picture>
                 </div>
                 <div class="superalimento-card superalimento-card-reverse">
-                    <p><span>CHÍA:</span> Las semillas de chía son una fuente rica de proteínas, ﬁbra y ácidos grasos
-                        omega-3. Ayudan
-                        a reducir el riesgo de enfermedades cardíacas, a controlar el azúcar en la sangre y a mejorar la
-                        digestión. Además, su capacidad para absorber líquidos las hace ideales para agregar a batidos,
-                        yogures y otros alimentos para aumentar su contenido de ﬁbra.</p>
-                    <div class="superalimento-card-img">
-                        <img src="./Multimedia/chia.jpg" alt="chia">
-                    </div>
+                    <p>
+                        <span>CHÍA:</span> Las semillas de chía son una fuente rica de
+                        proteínas, ﬁbra y ácidos grasos omega-3. Ayudan a reducir el
+                        riesgo de enfermedades cardíacas, a controlar el azúcar en la
+                        sangre y a mejorar la digestión. Además, su capacidad para
+                        absorber líquidos las hace ideales para agregar a batidos, yogures
+                        y otros alimentos para aumentar su contenido de ﬁbra.
+                    </p>
+                    <picture class="superalimento-card-img">
+                        <source media="(min-width: 1401px)" srcset="./Multimedia/chia_xxl.jpg">
+                        <source media="(min-width: 1201px)" srcset="./Multimedia/chia_xl.jpg">
+                        <source media="(min-width: 993px)" srcset="./Multimedia/chia_lg.jpg">
+                        <source media="(min-width: 769px)" srcset="./Multimedia/chia_md.jpg">
+                        <source media="(min-width: 577px)" srcset="./Multimedia/chia_sm.jpg">
+                        <img src="./Multimedia/chia_320.jpg" alt="chia-320">
+                    </picture>
                 </div>
                 <div class="superalimento-card">
-                    <p><span>CACAO:</span> El cacao es el ingrediente principal en la fabricación de chocolate, pero
-                        también es un
-                        superalimento en sí mismo. Es rico en antioxidantes y compuestos ﬂavonoides, que mejoran la
-                        función cardiovascular, reducen la inﬂamación y protegen el cerebro. Además, el cacao puede
-                        mejorar el estado de ánimo y reducir los antojos de alimentos dulces.</p>
-                    <div class="superalimento-card-img">
-                        <img src="./Multimedia/cacao.jpg" alt="cacao">
-                    </div>
+                    <p>
+                        <span>CACAO:</span> El cacao es el ingrediente principal en la
+                        fabricación de chocolate, pero también es un superalimento en sí
+                        mismo. Es rico en antioxidantes y compuestos ﬂavonoides, que
+                        mejoran la función cardiovascular, reducen la inﬂamación y
+                        protegen el cerebro. Además, el cacao puede mejorar el estado de
+                        ánimo y reducir los antojos de alimentos dulces.
+                    </p>
+                    <picture class="superalimento-card-img">
+                        <source media="(min-width: 1401px)" srcset="./Multimedia/cacao_xxl.jpg">
+                        <source media="(min-width: 1201px)" srcset="./Multimedia/cacao_xl.jpg">
+                        <source media="(min-width: 993px)" srcset="./Multimedia/cacao_lg.jpg">
+                        <source media="(min-width: 769px)" srcset="./Multimedia/cacao_md.jpg">
+                        <source media="(min-width: 577px)" srcset="./Multimedia/cacao_sm.jpg">
+                        <img src="./Multimedia/cacao_320.jpg" alt="cacao-320">
+                    </picture>
                 </div>
                 <div class="superalimento-card superalimento-card-reverse">
-                    <p><span>ESPIRULINA:</span> La espirulina es una forma de algas verdeazuladas que es rica en
-                        proteínas, vitaminas
-                        y minerales. Tiene propiedades antioxidantes y antiinﬂamatorias, y puede ayudar a reducir el
-                        colesterol y mejorar la función inmunológica. La espirulina también se utiliza a menudo como un
-                        suplemento dietético para ayudar a aumentar la energía y la resistencia.</p>
-                    <div class="superalimento-card-img">
-                        <img src="./Multimedia/espirulina.jpg" alt="espirulina">
-                    </div>
+                    <p>
+                        <span>ESPIRULINA:</span> La espirulina es una forma de algas
+                        verdeazuladas que es rica en proteínas, vitaminas y minerales.
+                        Tiene propiedades antioxidantes y antiinﬂamatorias, y puede ayudar
+                        a reducir el colesterol y mejorar la función inmunológica. La
+                        espirulina también se utiliza a menudo como un suplemento
+                        dietético para ayudar a aumentar la energía y la resistencia.
+                    </p>
+                    <picture class="superalimento-card-img">
+                        <source media="(min-width: 1401px)" srcset="./Multimedia/espirulina_xxl.jpg">
+                        <source media="(min-width: 1201px)" srcset="./Multimedia/espirulina_xl.jpg">
+                        <source media="(min-width: 993px)" srcset="./Multimedia/espirulina_lg.jpg">
+                        <source media="(min-width: 769px)" srcset="./Multimedia/espirulina_md.jpg">
+                        <source media="(min-width: 577px)" srcset="./Multimedia/espirulina_sm.jpg">
+                        <img src="./Multimedia/espirulina_320.jpg" alt="espirulina-320">
+                    </picture>
                 </div>
                 <div class="superalimento-card">
-                    <p><span>CÚRCUMA:</span> La cúrcuma es una especia amarilla que se utiliza comúnmente en la cocina
-                        india y tiene
-                        propiedades antiinﬂamatorias y antioxidantes. El ingrediente activo en la cúrcuma es la
-                        curcumina, que se ha estudiado por su capacidad para reducir la inﬂamación en el cuerpo, mejorar
-                        la función cognitiva y proteger contra enfermedades crónicas.</p>
-                    <div class="superalimento-card-img">
-                        <img src="./Multimedia/curcuma.jpg" alt="curcuma">
-                    </div>
+                    <p>
+                        <span>CÚRCUMA:</span> La cúrcuma es una especia amarilla que se
+                        utiliza comúnmente en la cocina india y tiene propiedades
+                        antiinﬂamatorias y antioxidantes. El ingrediente activo en la
+                        cúrcuma es la curcumina, que se ha estudiado por su capacidad para
+                        reducir la inﬂamación en el cuerpo, mejorar la función cognitiva y
+                        proteger contra enfermedades crónicas.
+                    </p>
+                    <picture class="superalimento-card-img">
+                        <source media="(min-width: 1401px)" srcset="./Multimedia/curcuma_xxl.jpg">
+                        <source media="(min-width: 1201px)" srcset="./Multimedia/curcuma_xl.jpg">
+                        <source media="(min-width: 993px)" srcset="./Multimedia/curcuma_lg.jpg">
+                        <source media="(min-width: 769px)" srcset="./Multimedia/curcuma_md.jpg">
+                        <source media="(min-width: 577px)" srcset="./Multimedia/curcuma_sm.jpg">
+                        <img src="./Multimedia/curcuma_320.jpg" alt="curcuma-320">
+                    </picture>
                 </div>
                 <div class="superalimento-card superalimento-card-reverse">
-                    <p><span>PALTA:</span> La palta, también conocida como aguacate, es una fruta rica en grasas
-                        saludables, ﬁbra,
-                        vitaminas y minerales. Ayuda a mejorar la salud del corazón, a controlar el azúcar en la sangre,
-                        a reducir la inﬂamación y a mejorar la salud de la piel. Además, su alto contenido de grasas
-                        saludables lo hace ideal para agregar a ensaladas y otros platos para aumentar su valor
-                        nutricional.</p>
-                    <div class="superalimento-card-img">
-                        <img src="./Multimedia/palta.jpg" alt="palta">
-                    </div>
+                    <p>
+                        <span>PALTA:</span> La palta, también conocida como aguacate, es
+                        una fruta rica en grasas saludables, ﬁbra, vitaminas y minerales.
+                        Ayuda a mejorar la salud del corazón, a controlar el azúcar en la
+                        sangre, a reducir la inﬂamación y a mejorar la salud de la piel.
+                        Además, su alto contenido de grasas saludables lo hace ideal para
+                        agregar a ensaladas y otros platos para aumentar su valor
+                        nutricional.
+                    </p>
+                    <picture class="superalimento-card-img">
+                        <source media="(min-width: 1401px)" srcset="./Multimedia/palta_xxl.jpg">
+                        <source media="(min-width: 1201px)" srcset="./Multimedia/palta_xl.jpg">
+                        <source media="(min-width: 993px)" srcset="./Multimedia/palta_lg.jpg">
+                        <source media="(min-width: 769px)" srcset="./Multimedia/palta_md.jpg">
+                        <source media="(min-width: 577px)" srcset="./Multimedia/palta_sm.jpg">
+                        <img src="./Multimedia/palta_320.jpg" alt="palta-320">
+                    </picture>
                 </div>
             </div>
         </section>
@@ -295,20 +413,23 @@
             </div>
             <div class="div-form">
                 <div class="div-p-newsletter">
-                    <p>Suscribete a nuestro Newsletter para recibir consejos sobre comida saludable vegetariana,
-                        informacion sobre nuevas tendencias en la cocina y muchas de nuestras recetas seleccionadas.</p>
+                    <p>
+                        Suscribete a nuestro Newsletter para recibir consejos sobre comida
+                        saludable vegetariana, informacion sobre nuevas tendencias en la
+                        cocina y muchas de nuestras recetas seleccionadas.
+                    </p>
                 </div>
                 <form action="index.html" method="get" enctype="application/x-www-form-urlencoded">
                     <div class="columnas-form">
                         <div class="columna-izquierda">
                             <label for="nombre">NOMBRE</label>
-                            <input type="text" name="nombre" id="nombre" required>
+                            <input type="text" name="nombre" id="nombre" required />
 
                             <label for="apellido">APELLIDO</label>
-                            <input type="text" name="apellido" id="apellido" required>
+                            <input type="text" name="apellido" id="apellido" required />
 
                             <label for="email">EMAIL</label>
-                            <input type="text" name="email" id="email" required>
+                            <input type="text" name="email" id="email" required />
 
                             <label for="comentario">COMENTARIO</label>
                             <textarea name="comentario" id="comentario" rows="5" required></textarea>
@@ -319,30 +440,31 @@
                             </div>
                             <div class="opciones-checkbox">
                                 <label>
-                                    <input type="checkbox" name="informacion" value="novedades">
+                                    <input type="checkbox" name="informacion" value="novedades" />
                                     Novedades y tendencias
                                 </label>
                                 <label>
-                                    <input type="checkbox" name="informacion" value="recetas">
+                                    <input type="checkbox" name="informacion" value="recetas" />
                                     Recetas
                                 </label>
                                 <label>
-                                    <input type="checkbox" name="informacion" value="consejos">
+                                    <input type="checkbox" name="informacion" value="consejos" />
                                     Consejos
                                 </label>
                                 <label>
-                                    <input type="checkbox" name="informacion" value="desafios">
+                                    <input type="checkbox" name="informacion" value="desafios" />
                                     Desafíos
                                 </label>
                                 <label>
-                                    <input type="checkbox" name="informacion" value="descuentos">
+                                    <input type="checkbox" name="informacion" value="descuentos" />
                                     Descuentos
                                 </label>
                             </div>
                         </div>
                     </div>
-                    <div class="submit-container">
-                        <input type="submit" value="SUSCRIBIRME">
+                    <!-- Botón Boostrap -->
+                    <div class="submit-container d-flex justify-content-end mb-2">
+                        <input id="suscribirme-btn" class="btn btn-primary py-4 px-2 w-25 btn-lg rounded-4 align-items-center" type="submit" value="Suscribirme">
                     </div>
                 </form>
             </div>
@@ -364,14 +486,23 @@
         <div class="footer-redes">
             <p>Seguí a Green Food</p>
             <ul class="redes">
-                <li><a href="https://www.facebook.com/"><img src="./Multimedia/facebook.png" alt="Facebook"></a></li>
-                <li><a href="https://twitter.com/"><img src="./Multimedia/twitter.png" alt="Twitter"></a></li>
-                <li><a href="https://www.instagram.com/"><img src="./Multimedia/instagram.png" alt="Instagram"></a></li>
-                <li><a href="https://www.youtube.com/"><img class="youtube-footer" src="./Multimedia/youtube.png"
-                            alt="Youtube"></a></li>
+                <li>
+                    <a href="https://www.facebook.com/"><img src="./Multimedia/facebook.png" alt="Facebook" /></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/"><img src="./Multimedia/twitter.png" alt="Twitter" /></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/"><img src="./Multimedia/instagram.png" alt="Instagram" /></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/"><img class="youtube-footer" src="./Multimedia/youtube.png"
+                            alt="Youtube" /></a>
+                </li>
             </ul>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
